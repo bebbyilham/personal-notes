@@ -1,0 +1,31 @@
+.button {
+  background-color: transparent;
+  flex: 1;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--main);
+}
+
+.button[data-action="delete"] {
+  color: #f37878;
+}
+
+.button[data-action="archive"],
+.button[data-action="unarchived"] {
+  color: #d9f8c4;
+}
+
+.button[data-action="delete"]:hover {
+  color: var(--main);
+  background-color: #f37878;
+}
+
+.button[data-action="archive"]:hover,
+.button[data-action="unarchived"]:hover {
+  color: var(--main);
+  background-color: #d9f8c4;
+}
